@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>PO2 4 metodos</title>
+		<meta charset="utf-8">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	</head>
+	<body>
+		<div id="content">
+
+			<br>
+			<h1 id="titulo">Resolução de Otimização Monovariável Não Linear</h1>
+			<br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col xs-3 entrada">Z = <input type="text" id="funcao" value="x*x + 3"></input></div>
+					<div class="col xs-3 entrada">a =<input type="text" id="a" value="-1"></input></div>
+					<div class="col xs-3 entrada">b = <input type="text" id="b" value="1"></input></div>
+					<div class="col xs-3 entrada">Ɛ =<input type="text" id="erro" value="0.0001"></input></div>
+				</div>
+				<br><br>
+				<div class="row">
+					<div class="col">
+						<input type="radio" name="tipo" id="buscaUniforme" checked>Busca Uniforme<br>
+						<input type="radio" name="tipo" id="buscaDicotomica">Busca Dicotômica<br>
+						<input type="radio" name="tipo" id="buscaAurea">Método da Seção Áurea<br>
+						<input type="radio" name="tipo" id="buscaFibonacci">Busca de Fibonacci<br>
+					</div>
+				</div>
+
+				<br><br>
+				<div class="row">
+					<div class="col">
+						<button type="button" class="btn btn-info" id="calcula">Calcular</button>
+						<button type="button" class="btn btn-info" id="limpa">Limpar</button>
+						<button type="button" class="btn btn-info" id="sobre">Sobre</button>
+						<button type="button" class="btn btn-info" id="caso">Problema pronto</button>
+					</div>
+				</div>
+				<br>
+
+
+			</div>
+
+			
+
+			<br><br>
+			<div class="texto-result">
+				Resultado: <p id="result"></p>
+			</div>
+		</div>
+		<p align="center">Desenvolvido por Paulo Maia e Rodney Souza</p>
+
+	</body>
+</html>
