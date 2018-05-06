@@ -44,50 +44,45 @@ void setup() {
 
 //******************************************************* RECEBE COMANDO ***************************************************
 void recebeMensagem(){
-  int comando;
+  int  comando;
+  char com[8];
   if (Bluetooth.available()>0){
     while(Bluetooth.available()){
       comando = Bluetooth.read();
-      Serial.print(comando);
+      itoa(comando, com, 2);
+      trataMensagem(com); // comando está formado e será tratado
    }
-   char com[8];
-   itoa(comando, com, 2);
-
-   trataMensagem(com); // comando está formado e será tratado
+   
   }
 }
 
 //**********************************************************TRATA COMANDO ***************************************************
 
 void trataMensagem(char* com){
-  //Serial.write(comando);
+  Serial.println("================================\nMensagem");
+  Serial.println(com);
   //traduzir numero para byte
-  int aux;
-  aux = atoi(com);
-  char comandoByte[8];
-  itoa(aux,comandoByte, 2); // converte numero em cadeia de caracteres binária 
+  
   char comandoComZero[8];
-
   //Preenchendo zeros
   int m;
-  Serial.write("||");
-  Serial.write(comandoByte);
-  Serial.write(" Vira ->");
-  int l = strlen(comandoByte);
+  int l = strlen(com);
   if(l==8){
-    strcpy(comandoComZero,comandoByte);
+    strcpy(comandoComZero,com);
   }else{
-    for(m=8; m>8-(strlen(comandoByte)); m--){
-      comandoComZero[m-1]=comandoByte[l-1];
+    Serial.println(l);
+    for(m=7; m>7-(strlen(com)); m--){
+      comandoComZero[m]=com[l-1];
       l--;
     }
   
-    for(m; m>0; m--){
-      comandoComZero[m-1] = '0';
+    for(m; m>=0; m--){
+      comandoComZero[m] = '0';
     }
   }
-  comandoComZero[8]='\0';
-  Serial.write(comandoComZero);
+  //comandoComZero[8]='\0';
+  Serial.println("--Vira:");
+  Serial.println(comandoComZero);
   
   
   //verificando que tipo de comando será pelos dois primeiros bits
@@ -100,7 +95,51 @@ void trataMensagem(char* com){
     MD=(int)(4*(comandoComZero[5]-'0') + 2*(comandoComZero[6]-'0') + 1*(comandoComZero[7]-'0'));
     //Tratando motor direito
 
-    Serial.write(ME);
+    switch (MD) {
+      
+      case 0:
+        //Reverse forte
+        Serial.println("Reverse Forte");
+      break;
+      
+      case 1:
+        //Reverse fraco
+        Serial.println("Reverse Fraco");
+      break;
+      
+       case 2:
+       //Parado
+        Serial.println("Parado");
+      break;
+      
+       case 3:
+       //Forward fraco
+       Serial.println("Forward Fraco");
+      break;
+      
+       case 4:
+        //Forward Moderado Fraco
+        Serial.println("Forward Moderado Fraco");
+      break;
+      
+       case 5:
+        //Forward Moderado Forte
+         Serial.println("Forward Moderado Forte");
+      break;
+      
+       case 6:
+        //Forward Forte
+        Serial.println("Forward Forte");
+      break;
+      
+       case 7:
+       //Nada
+       Serial.println("Nada");
+      break; 
+    }
+    Serial.println(ME);
+    Serial.println("==============================");
+    
     switch (MD) {
       
       case 0:
