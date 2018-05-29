@@ -1,0 +1,14 @@
+Message[301] C:\PROGRAM FILES (X86)\MICROCHIP\MPASM SUITE\P16F873.INC 33 : MESSAGE: (Processor-header file mismatch.  Verify selected processor.)
+Warning[205] C:\USERS\PAULI\DOCUMENTS\PROJECTS\COFRE-PIC\CODIGO.ASM 8 : Found directive in column 1. (CBLOCK)
+Warning[205] C:\USERS\PAULI\DOCUMENTS\PROJECTS\COFRE-PIC\CODIGO.ASM 17 : Found directive in column 1. (ENDC)
+Message[302] C:\USERS\PAULI\DOCUMENTS\PROJECTS\COFRE-PIC\CODIGO.ASM 33 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\PAULI\DOCUMENTS\PROJECTS\COFRE-PIC\CODIGO.ASM 44 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\PAULI\DOCUMENTS\PROJECTS\COFRE-PIC\CODIGO.ASM 46 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\PAULI\DOCUMENTS\PROJECTS\COFRE-PIC\CODIGO.ASM 47 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[305] C:\USERS\PAULI\DOCUMENTS\PROJECTS\COFRE-PIC\CODIGO.ASM 83 : Using default destination of 1 (file).
+Message[305] C:\USERS\PAULI\DOCUMENTS\PROJECTS\COFRE-PIC\CODIGO.ASM 89 : Using default destination of 1 (file).
+Message[305] C:\USERS\PAULI\DOCUMENTS\PROJECTS\COFRE-PIC\CODIGO.ASM 97 : Using default destination of 1 (file).
+Message[305] C:\USERS\PAULI\DOCUMENTS\PROJECTS\COFRE-PIC\CODIGO.ASM 102 : Using default destination of 1 (file).
+Message[305] C:\USERS\PAULI\DOCUMENTS\PROJECTS\COFRE-PIC\CODIGO.ASM 127 : Using default destination of 1 (file).
+Warning[203] C:\USERS\PAULI\DOCUMENTS\PROJECTS\COFRE-PIC\CODIGO.ASM 163 : Found opcode in column 1. (NOP)
+Message[305] C:\USERS\PAULI\DOCUMENTS\PROJECTS\COFRE-PIC\CODIGO.ASM 166 : Using default destination of 1 (file).

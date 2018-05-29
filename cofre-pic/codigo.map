@@ -1,0 +1,62 @@
+MPLINK 4.38, Linker
+Linker Map File - Created Tue May 29 17:55:44 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x000002
+                   .org_2       code   0x000004    program   0x000108
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000000      
+                            0x000004    0x000087      
+            133 out of 4230 program addresses used, program memory utilization is 3%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+               Delay1.5ms   0x000067    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+             Delay1.5ms_0   0x00006b    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+              Delay18.5ms   0x000072    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+            Delay18.5ms_0   0x000076    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+                Delay19ms   0x00007d    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+              Delay19ms_0   0x000081    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+                 Delay1ms   0x00005c    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+               Delay1ms_0   0x000060    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+                   INICIO   0x000005    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+              INICIOCICLO   0x00003d    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+             INICIOCICLOX   0x000054    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+                    LOOP1   0x00001e    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+                    LOOP2   0x000022    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+              PRIMEIRAVEZ   0x000047    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+                VOLTATUDO   0x00005b    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   INICIO   0x000005    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+                    LOOP1   0x00001e    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+                    LOOP2   0x000022    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+              INICIOCICLO   0x00003d    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+              PRIMEIRAVEZ   0x000047    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+             INICIOCICLOX   0x000054    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+                VOLTATUDO   0x00005b    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+                 Delay1ms   0x00005c    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+               Delay1ms_0   0x000060    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+               Delay1.5ms   0x000067    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+             Delay1.5ms_0   0x00006b    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+              Delay18.5ms   0x000072    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+            Delay18.5ms_0   0x000076    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+                Delay19ms   0x00007d    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+              Delay19ms_0   0x000081    program     static C:\Users\pauli\Documents\Projects\cofre-pic\codigo.asm
+
+
